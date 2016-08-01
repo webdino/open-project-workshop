@@ -4,38 +4,50 @@
 
 ## 1st day
 
-- Goal: Sharing workshop's objectives
+- Goal: Establishing technical foundation of web programming
 - Contents
-   - Lectures
-        - Design thinking / prototyping
-        - Openess
-        - Software licenses
-   - Team building
+   - Orientation
+        - Workshop overview
+        - Grading criteria
+   - Keynote speach
    - Development environment setup
         - Software installation
         - Signup services
         - Some tutorials of the develpment environtment
+   - Web prgramming basics
+        - Web application architecture
+        - HTML & CSS
+        - JavaScript basics
+        - Controling web browsers with JavaScript
+             - DOM programming
+             - Web APIs
+             - Event handling
+   - Wrapup
 - Assignments: TBD
 
 ## 2nd day
 
-- Goal: Building up the technical foundation of web programming
+- Goal: Learning Web-based hardware controll
 - Contents
-   - JavaScript programiming basics
-   - Controling web browsers with JavaScript
-        - DOM programming
-        - Web APIs
-   - Controling devices with JavaScript
+    - Controling devices with JavaScript
         - Arduino
         - JonnyFive
-   - Network programming with JavaScript using libraries & BaaS
+        - Chirimen
+        - MIDI
+    - Network programming with JavaScript using libraries & BaaS
         - e.g [Kinto](http://kinto.readthedocs.io/en/latest/), [Milkcocoa](https://mlkcca.com/), [NIFTY Cloud mobile backend](http://mb.cloud.nifty.com/)
-- Assignments: Creating project proposal
+    - Team bulding
+    - Ideathon
+        - To create final project proposal
+        - Pitch
+    - Wrapup
+- Assignments: Finishing project proposal
 
 ## 3rd day
 
-- Pitch: project proposal
 - Hacking
+- Pitch: project proposal
+
 
 ## 4th day
 
