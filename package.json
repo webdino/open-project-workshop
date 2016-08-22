@@ -1,0 +1,26 @@
+{
+  "name": "open-project-workshop",
+  "version": "1.0.0",
+  "description": "Resources and materials for Open Project Workshop",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozilla-japan/open-project-workshop.git"
+  },
+  "author": "Mozilla Japan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mozilla-japan/open-project-workshop/issues"
+  },
+  "homepage": "https://github.com/mozilla-japan/open-project-workshop#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0"
+  }
+}
