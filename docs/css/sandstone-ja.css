@@ -1,0 +1,30 @@
+.reveal h1{
+  font-size: 207%;
+  margin-bottom: 3rem;
+}
+
+.reveal h2, .reveal h3{
+  font-size: 144%;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.reveal ul, .reveal ol{
+  line-height: 1.5;
+  display: inline-block;
+  text-align: left;
+}
+
+.reveal ul ul{
+  display: block;
+  padding-left: 3rem;
+}
+
+.reveal p{
+  text-align: center;
+  line-height: 1.5;
+}
+
+.reveal .slides img{
+  max-width: 100%;
+}
