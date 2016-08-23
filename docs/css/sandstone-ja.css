@@ -25,6 +25,34 @@
   line-height: 1.5;
 }
 
+.reveal code{
+  text-align: left;
+  padding: 2rem;
+  line-height: 1.2;
+}
+
+.reveal table{
+  max-width: 100%;
+  min-width: 80%;
+  margin: auto;
+}
+.reveal th, .reveal td{
+  padding: 1rem;
+}
+.reveal th{
+  background-color: #aaaaaa;
+}
+
+.reveal tr:nth-child(even){
+  background-color: #cacaca;
+}
+
+.reveal pre + ul,
+.reveal table + ul,
+.reveal pre + pre{
+  margin-top: 2rem;
+}
+
 .reveal .slides img{
   max-width: 100%;
 }
