@@ -358,7 +358,9 @@ b = id(a);
 ## 関数呼び出し
 
 ~~~javascript
-alert("hello, world");
+let a, b;
+a = parseInt("10");
+b = parseInt("10", 2);
 ~~~
 
 * 定義されてる関数を利用することです
@@ -370,14 +372,29 @@ alert("hello, world");
 ### 引数
 
 ~~~javascript
-alert("hello, world");
-alert("こんにちは！こんにちは！");
+let a, b;
+a = parseInt("10");
+b = parseInt("10", 2);
 ~~~
 
 * 関数に与える入力です
 * 入力によって関数は違う振る舞いをします
 * 引数の個数は関数によって異なります
 * 複数の引数を与える場合は、引数を , で区切って列挙します
+
+----
+
+### 返り値
+
+~~~javascript
+let a, b;
+a = parseInt("10");
+b = parseInt("10", 2);
+~~~
+
+* 返り値：関数呼び出しの評価値
+* 値なので変数に代入できます
+* どのような値が返ってくるかは、関数定義に依存します
 
 ---
 
@@ -403,7 +420,7 @@ function id(value){
 
 ----
 
-### 返り値
+### return 文：返り値の定義
 
 ~~~javascript
 function id(value){
@@ -414,7 +431,6 @@ let a;
 a = id(5); // 5 が代入される
 ~~~
 
-* 関数の評価値です
 * return 文で返す値を決めます
 * return 文が省略された場合は、undefined が返ります
 
@@ -757,18 +773,39 @@ add(1, 2);
 ### クロージャ：定義時の環境の保存
 
 ~~~javascript
-function addFunction(value){
-   return a => a + value;
+function defineFunction(){
+   let message = "hello, world";
+   return function(){
+     console.log(message);
+   }
 }
 
-let addOne = addFunction(1);
-let addTwo = addFunction(2);
-addOne(1); // 2
-addTwo(1); // 3
+let f = defineFunction();
+f();
 ~~~
 
-* 関数を定義する時に、そのスコープの変数を参照できます
-* その時の値が関数内部で使えます
+* コンソールに "hello, world" と出力されます
+* 定義された環境を覚えている関数のことを「クロージャ」と呼びます
+
+----
+
+### クロージャの利用例
+
+~~~ javascript
+function makeAdder(b){
+  return function(a){
+     return a + b;
+  };
+}
+
+let add0 = makeAdder(0);
+let add1 = makeAdder(1);
+let add2 = makeAdder(2);
+
+add0(1); // 1
+add1(1); // 2
+add2(1); // 3
+~~~
 
 ---
 
